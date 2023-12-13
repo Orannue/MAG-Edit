@@ -161,6 +161,13 @@ table#video {
 	font-size: 150%;
 	font-weight: 500;
 }
+.subsection {
+    font-size: 125%; /* 比主标题小一些 */
+    font-weight: 400; /* 略微减轻字体的粗细 */
+    color: #666; /* 副标题通常使用更淡的颜色 */
+
+    margin-bottom: 1em; /* 添加一些底部间距 */
+}
 
 .bibtex {
 	font-family: Google Sans, Courier, monospace;
@@ -194,6 +201,15 @@ code {
  margin-right: -50px;
  height: 300px;
  }
+
+ .carousel-control-prev2 {
+	margin-left: -50px;
+	height: 300px;
+	}
+.carousel-control-next2 {
+margin-right: -10px;
+height: 100px;
+}
  .carousel-item {
  /* height: 234px; */
  overflow: hidden;
@@ -209,9 +225,15 @@ code {
  .carousel-control-next,.carousel-control-prev{
  opacity:1
  }
+ .carousel-control-next2,.carousel-control-prev2{
+	opacity:1
+	}
  .carousel-control-next:focus,.carousel-control-next:hover,.carousel-control-prev:focus,.carousel-control-prev:hover{
  opacity:1
  }
+ .carousel-control-next2:focus,.carousel-control-next2:hover,.carousel-control-prev2:focus,.carousel-control-prev2:hover{
+	opacity:1
+	}
  .slider-navigation-next,.slider-navigation-previous{
  display:flex;
  justify-content:center;
@@ -228,8 +250,10 @@ code {
  margin-top:-20px;
  left:0;
  cursor:pointer;
- transition:transform .3s,opacity .3s,-webkit-transform .3s
+ transition:transf
+ orm .3s,opacity .3s,-webkit-transform .3s
  }
+
  .slider-navigation-next svg,.slider-navigation-previous svg{
  width:25%;
  background:gray
@@ -274,4 +298,7 @@ code {
 
 .teaser-img {
     width: 300px !important;
+}
+.result-img {
+    width: 600px !important;
 }
