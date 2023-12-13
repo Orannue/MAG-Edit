@@ -157,7 +157,8 @@ table#video {
 	color: #4682B4;
 }
 
-.section{
+
+.section1{
 	font-size: 150%;
 	font-weight: 500;
 }
@@ -185,6 +186,11 @@ table.data td {
 	vertical-align: top;
 }
 
+.image-item img, .gif-item img {
+	width: 100%; /* 让图像填满容器 */
+	height: auto; /* 保持图像的原始宽高比 */
+  }
+  
 code {
   font-family: Consolas,"courier new";
   color: crimson;
@@ -302,3 +308,35 @@ height: 100px;
 .result-img {
     width: 600px !important;
 }
+
+.gif-grid-6 {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; /* 四列布局 */
+	gap: 2px;
+	width: 100%; /* 确保容器宽度充足 */
+	margin-left: auto; /* 左边距自动 */
+	margin-right: auto; /* 右边距自动 */
+	margin-top: -60px; /* 右边距自动 */
+  }
+  
+  
+  .gif-grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr; /* 四列布局 */
+	gap: 10px;
+	width: 100%; /* 确保容器宽度充足 */
+	margin-left: auto; /* 左边距自动 */
+	margin-right: auto; /* 右边距自动 */
+  }
+  .full-width-text {
+	grid-column: 1 / -1; /* 从第一列开始，延伸到最后一列 */
+	text-align: center; /* 文字居中 */
+	color: #0099ff; /* 设置文本颜色 */
+	font-size: 20px; /* 设置字体大小 */
+	/* 其他样式 */
+  }
+  .gif-caption-small {
+	text-align: center;
+	color: #0099ff; /* 设置文本颜色 */
+	font-size: 11px;
+  }
