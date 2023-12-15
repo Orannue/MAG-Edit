@@ -327,7 +327,7 @@
             <td colspan="3">
               <p style="margin-top: 20px; margin-bottom: -12px;">
                 <div style="text-align: center">
-                  <img src="./assets/framework.png" alt="" width="1080px" style="max-width: 800px; height: auto;" />
+                  <img src="./assets/framework.png" alt="" width="1080px" style="max-width: 1100px; height: auto;" />
               </div>
               <br>
               <p style="text-align: justify">
@@ -532,6 +532,7 @@
           <div class="column custom-width">
             <h2 class="title is-3">Comparisons</h2>
             <div class="content has-text-justified">
+              <h3 class="title is-4">Comparison with Training-free Methods</h3>
               <div class="caption-container" style="width: 1200px; padding-left: 50px">
                 <div class="caption">
                   <p>Source Image</p>
@@ -556,6 +557,7 @@
                 
                 <!-- Add remaining captions here  -->
               </div>
+        
         <div id="results-carousel" class="carousel results-carousel" align="center" data-interval="false">
           <div class="item item-video1">
              <!-- Add caption element for each video preload="auto"-->
@@ -672,8 +674,10 @@
           </div>
           </div>
         </div>
-        <div class="content has-text-justified">
-          <div class="caption-container" style="width: 1200px; padding-left: 50px">
+
+        <div class="content has-text-justified" >        
+          <h3 class="title is-4">Comparison with Training methods</h3>
+          <div class="caption-container" style="width: 1200px; padding-left: 50px; ">
             <div class="caption">
               <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Source Image</p>
             </div>
@@ -762,8 +766,86 @@
     
       </div>
     </div>
+    <div class="content has-text-justified" >        
+      <h3 class="title is-4">Comparison with Recent Inversion Methods</h3>
+      <div class="caption-container" style="width: 1200px; padding-left: 50px; ">
+        <div class="caption">
+          <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Source Image</p>
+        </div>
+        <div class="caption">
+          <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ours</p>
+        </div>
+        <div class="caption">
+          <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Instruct-Pix2Pix<a href="#ref-ip2p">[5]</a></p>
+        </div>
+ 
+ 
+ 
+        <div class="caption">
+          <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MagicBrush<a href="#ref-magic">[6]</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+        </div>
+        <div class="caption">
+          <p>SINE<a href="#ref-sine">[7]</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+        </div>
+        
+        <!-- Add remaining captions here  -->
       </div>
-    </div>
+<div id="results-carousel" class="carousel results-carousel" align="center" data-interval="false">
+  <div class="item item-video1">
+     <!-- Add caption element for each video preload="auto"-->
+    <img style="width: 200px;"  src="./assets/compare3/1/source.png">
+  </img>
+  <img style="width: 200px;"  src="./assets/compare3/1/ours.png">
+</img>
+    
+<img style="width: 200px;"  src="./assets/compare3/1/stylediffusion.png">
+</img>
+    
+<img style="width: 200px;"  src="./assets/compare3/1/proxnpi.png">
+</img>
+<img style="width: 200px;"  src="./assets/compare3/1/directinversion.png">
+
+   
+  </div>
+  
+  <div class="item item-video2">
+    
+    <img style="width: 200px;"  src="./assets/compare3/2/source.png">
+  </img>
+  <img style="width: 200px;"  src="./assets/compare3/2/ours.png">
+</img>
+    
+<img style="width: 200px;"  src="./assets/compare3/2/stylediffision.png">
+</img>
+    
+<img style="width: 200px;"  src="./assets/compare3/2/proxnpi.png">
+</img>
+<img style="width: 200px;"  src="./assets/compare3/2/directinversion.png">
+
+  </div>
+
+
+  <div class="item item-video3">
+    
+    <img style="width: 200px;"  src="./assets/compare3/3/source.png">
+  </img>
+  <img style="width: 200px;"  src="./assets/compare3/3/ours.png">
+</img>
+    
+<img style="width: 200px;"  src="./assets/compare3/3/stylediffusion.png">
+</img>
+    
+<img style="width: 200px;"  src="./assets/compare3/3/proxnpi.png">
+</img>
+<img style="width: 200px;"  src="./assets/compare3/3/directinversion.png">
+  </div>
+
+
+
+  </div>
+</div>
+      </div>
+    </div></div></div>
   </section>
 <!-- End video preload="auto"grid -->
 
@@ -772,12 +854,12 @@
 <!-- End video preload="auto"carousel -->
 
 <!--BibTex citation -->
-  <section class="section" id="BibTeX">
+  <section class="section" id="BibTeX" >
     <div class="container is-max-desktop content">
       <h2 class="title">BibTeX</h2>
       <pre><code>@article{tokenflow2023,
-        title = {TokenFlow: Consistent Diffusion Features for Consistent Video Editing},
-        author = {Geyer, Michal and Bar-Tal, Omer and Bagon, Shai and Dekel, Tali},
+        title = {MAG-Edit: Localized Image Editing in Complex Scenarios via Mask-Based Attention-Adjusted Guidance},
+        author = {Qi Mao, Lan Chen, Yuchao Gu, Zhen Fang, Mike Zheng Shou},
         journal={arXiv preprint arxiv:2307.10373},
         year={2023}
         }</code></pre>
